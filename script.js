@@ -100,6 +100,6 @@ function updateGame() {
     requestAnimationFrame(updateGame);
 }
 
-// Inicializa o jogo
+// Inicializa o jogo \o/
 restartGameModal();
 updateGame();
