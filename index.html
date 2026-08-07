@@ -1,23 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo do gato e rato</title>
+    <title>Fuja do Gato 🐱</title>
     <link rel="shortcut icon" href="gato.png" type="image/png">
-
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h1> 🐭 Fuja do Gato 🐱</h1>
-    <p>Use as setas para escapar!</p>
+    <div class="game-wrapper">
+        <header>
+            <h1>🐭 Fuja do Gato 🐱</h1>
+            <p>Use as <strong>setas do teclado</strong> para escapar!</p>
+        </header>
 
-    <div id="game-container">
-        <div id="player" class="character"></div>
-        <div id="enemy" class="character"></div>
+        <div id="game-container">
+            <div id="player" class="character"></div>
+            <div id="enemy" class="character"></div>
+            
+            <!-- POPUP DE GAME OVER CUSTOMIZADA -->
+            <div id="game-over-modal" class="modal hidden">
+                <div class="modal-content">
+                    <h2>😿 Fim de Jogo!</h2>
+                    <p>O gato te pegou!</p>
+                    <button id="restart-btn" onclick="restartGameModal()">Tentar de Novo</button>
+                </div>
+            </div>
+        </div>
     </div>
 
-<script src="script.js"></script>    
+    <script src="script.js"></script>    
 </body>
 </html>
